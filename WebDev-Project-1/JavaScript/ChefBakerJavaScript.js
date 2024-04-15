@@ -32,19 +32,28 @@ document.addEventListener("DOMContentLoaded", function() {
         footer.classList.add("dark-mode");
     }
 
-    // Handle recipe section dropdown change
-    document.getElementById("recipe-section").addEventListener("change", function() {
-        console.log("Dropdown menu selection changed"); // Check if the event listener is triggered
+    // Wait for the DOM content to be fully loaded
+    document.addEventListener("DOMContentLoaded", function() {
+        // Add event listener to handle recipe section dropdown change
+        var recipeSectionDropdown = document.getElementById("recipe-section");
+        if (recipeSectionDropdown) { // Check if the element exists
+            recipeSectionDropdown.addEventListener("change", function() {
+                console.log("Dropdown menu selection changed"); // Check if the event listener is triggered
 
-        var selectedSection = this.value;
-        var sections = document.querySelectorAll(".recipe-section");
+                var selectedSection = this.value;
+                var sections = document.querySelectorAll(".recipe-section");
 
-        sections.forEach(function(section) {
-            if (selectedSection === "all" || section.id === selectedSection + "-recipes") {
-                section.style.display = "block"; // Show selected section or show all sections
-            } else {
-                section.style.display = "none"; // Hide other sections
-            }
-        });
+                sections.forEach(function(section) {
+                    if (selectedSection === "all" || section.id === selectedSection + "-recipes") {
+                        section.style.display = "block"; // Show selected section or show all sections
+                    } else {
+                        section.style.display = "none"; // Hide other sections
+                    }
+                });
+            });
+        } else {
+            console.error("Element with id 'recipe-section' not found."); // Log error if element is not found
+        }
     });
+
 });
