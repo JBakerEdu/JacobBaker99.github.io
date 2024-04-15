@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Recipes Archive</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="ChefBakerCss.css" rel="stylesheet">
+</head>
+<body>
+	<!-- Header -->
+    <header>
+        <div>
+            <a href="ChefBakerIndex.html"><img src="./images/ChefBakerLogoNoBackground.png" alt="Chef Baker logo"></a>
+            
+        
+			<nav>
+				<ul class="menu">
+					<li><a href="ChefBakerIndex.html">Home</a></li>
+					<li><a href="ChefBakerBlogs.html">Blogs</a>
+						<ul class="submenu">
+							<li><a href="ChefBakerCritique.html">Critique</a></li>
+							<li><a href="ChefBakerRecipes.html">Recipes</a></li>
+						</ul>
+					</li>
+					<li><a href="ChefBakerVideos.html">Videos</a>
+						<ul class="submenu">
+							<li><a href="ChefBakerChannel.html">Welcome Video</a></li>
+						</ul>
+					</li>
+					<li><a href="ChefBakerAbout.html">About</a>
+						<ul class="submenu">
+							<li><a href="ChefBakerChefs.html">Chefs</a></li>
+							<li><a href="ChefBakerInfo.html">Information</a></li>
+							<li><a href="ChefBakerForm.html">Become ChefBaker</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			
+			<button id="toggleMode">Dark Mode</button>
+		</div>
+			<div id="hamburgerMenu">
+				<button id="toggleMenu">&#9776;</button>
+			</div>
+		
+    </header>
+	
+    <!-- Main Content -->
+    <main class="recipes-main">
+        <!-- Introduction Section -->
+        <section id="introduction" class="info-section">
+            <div class="info-content">
+                <div class="info-text">
+                    <h2>Welcome to the Recipes Archive</h2>
+                    <p><br>
+                    Welcome to Chef Baker's eclectic culinary library, where every recipe tells 
+                    a unique story. Delve into a treasure trove of dishes spanning from breakfast 
+                    delights to sumptuous desserts, flavorful sauces, and refreshing drinks. Our 
+                    archive is a melting pot of creations sourced from blogs, videos, and hidden 
+                    gems never before shared.
+                    <br><br>
+                    Uncover the unexpected, as you navigate through a labyrinth of recipes, each 
+                    offering its own twist and flavor profile. From the familiar comfort of 
+                    cherished classics to daring experiments, there's something for every palate 
+                    and mood.
+                    <br><br>
+                    This repository is more than just a catalog; it's a testament to the spirit 
+                    of culinary exploration. Here, you may encounter duplicates or anonymous 
+                    contributions—testaments to the inclusive nature of our kitchen. While some 
+                    may prefer to remain in the shadows, their recipes shine brightly among the 
+                    rest, waiting to inspire your next culinary adventure.
+                    <br><br>
+                    Prepare to embark on a journey of taste, creativity, and discovery. Welcome 
+                    to Chef Baker's Recipe Archive—where every bite is a new chapter in your 
+                    culinary story.
+                    <br>
+                    </p>
+                </div>
+            </div>
+        </section>
+		
+		<!-- Recipe Archive Dropdown Section -->
+		<section id="recipe-archive" class="info-section">
+			<div class="info-content">
+				<div class="info-text">
+					<div class="recipe-header">
+						<h2>Recipes Archive</h2>
+						<div class="select-container">
+							<label for="recipe-section">Select Recipe Section:</label>
+							<select id="recipe-section">
+								<option value="all">All Recipes</option>
+								<option value="main-course">Main Course</option>
+								<option value="sides">Sides</option>
+								<option value="sauces">Sauces</option>
+								<option value="drinks">Drinks</option>
+								<option value="desserts">Desserts</option>
+								<option value="appetizers">Appetizers</option>
+								<option value="italian">Italian</option>
+								<option value="japanese">Japanese</option>
+								<option value="easy">Easy</option>
+								<option value="intermediate">Intermediate</option>
+								<option value="hard">Hard</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+        <!-- Main Course Recipes Section -->
+		<section id="main-course-recipes" class="info-section recipe-section">
+			<div class="info-content">
+				<div class="info-text">
+					<h2>Main Course Recipes</h2>
+					<ul>
+						<!-- List of main course recipes -->
+						<li><a href="./blogs/StuffedChickenParmBlog.html">Stuffed Chicken Parm</a></li>
+						<li><a href="./blogs/FlowerPancakesBlog.html">Flower Pancakes</a></li>
+						<li><a href="./blogs/ChickenMacShuffleBlog.html">Chicken Mac Shuffle</a></li>
+						<!-- Add more main course recipe links here -->
+					</ul>
+				</div>
+			</div>
+		</section>
+	
+		<!-- Sides Recipes Section -->
+		<section id="sides-recipes" class="info-section recipe-section">
+			<div class="info-content">
+				<div class="info-text">
+					<h2>Sides Recipes</h2>
+					<ul>
+						<!-- List of sides recipes -->
+						<li><a href="./blogs/SausageBiscuitsBlog.html">Italian Sausage Biscuits</a></li>
+						<!-- Add more sides recipe links here -->
+					</ul>
+				</div>
+			</div>
+		</section>
+	
+		<!-- Sauces Recipes Section -->
+		<section id="sauces-recipes" class="info-section recipe-section">
+			<div class="info-content">
+				<div class="info-text">
+					<h2>Sauces Recipes</h2>
+					<ul>
+						<!-- List of sauces recipes -->
+						<li><a href="./blogs/PeachChutneyBlog.html">Peach Chutney</a></li>
+						<!-- Add more sauces recipe links here -->
+					</ul>
+				</div>
+			</div>
+		</section>
+	
+		<!-- Drinks Recipes Section -->
+		<section id="drinks-recipes" class="info-section recipe-section">
+			<div class="info-content">
+				<div class="info-text">
+					<h2>Drinks Recipes</h2>
+					<ul>
+						<!-- List of drinks recipes -->
+						<li><a href="./blogs/OrangePineappleSmoothieBlog.html">Orange Pineapple Smoothie</a></li>
+						<!-- Add more drinks recipe links here -->
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<!-- Desserts Recipes Section -->
+		<section id="desserts-recipes" class="info-section recipe-section">
+			<div class="info-content">
+				<div class="info-text">
+					<h2>Desserts Recipes</h2>
+					<ul>
+						<!-- List of desserts recipes -->
+						<li><a href="./blogs/DippedChocolateCakeBlog.html">Chocolate Peanut Dipped Cake</a></li>
+						<!-- Add more desserts recipe links here -->
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<!-- Appetizers Recipes Section -->
+		<section id="appetizers-recipes" class="info-section recipe-section">
+			<div class="info-content">
+				<div class="info-text">
+					<h2>Appetizers Recipes</h2>
+					<ul>
+						<!-- List of appetizers recipes -->
+						<li><a href="./blogs/FishSushiBlog.html">Fish Sushi</a></li>
+						<li><a href="./blogs/SausageBiscuitsBlog.html">Italian Sausage Biscuits</a></li>
+						<!-- Add more appetizers recipe links here -->
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<!-- Italian Recipes Section -->
+		<section id="italian-recipes" class="info-section recipe-section">
+			<div class="info-content">
+				<div class="info-text">
+					<h2>Italian Recipes</h2>
+					<ul>
+						<!-- List of Italian recipes -->
+						<li><a href="./blogs/StuffedChickenParmBlog.html">Stuffed Chicken Parm</a></li>
+						<li><a href="./blogs/SausageBiscuitsBlog.html">Italian Sausage Biscuits</a></li>
+						<!-- Add more Italian recipe links here -->
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<!-- Japanese Recipes Section -->
+		<section id="japanese-recipes" class="info-section recipe-section">
+			<div class="info-content">
+				<div class="info-text">
+					<h2>Japanese Recipes</h2>
+					<ul>
+						<!-- List of Japanese recipes -->
+						<li><a href="./blogs/FishSushiBlog.html">Fish Sushi</a></li>
+						<!-- Add more Japanese recipe links here -->
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<!-- Easy Recipes Section -->
+		<section id="easy-recipes" class="info-section recipe-section">
+			<div class="info-content">
+				<div class="info-text">
+					<h2>Easy Recipes</h2>
+					<ul>
+						<!-- List of easy recipes -->
+						<li><a href="./blogs/FlowerPancakesBlog.html">Flower Pancakes</a></li>
+						<li><a href="./blogs/ChickenMacShuffleBlog.html">Chicken Mac Shuffle</a></li>
+						<li><a href="./blogs/PeachChutneyBlog.html">Peach Chutney</a></li>
+						<li><a href="./blogs/OrangePineappleSmoothieBlog.html">Orange Pineapple Smoothie</a></li>
+						<!-- Add more easy recipe links here -->
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<!-- Intermediate Recipes Section -->
+		<section id="intermediate-recipes" class="info-section recipe-section">
+			<div class="info-content">
+				<div class="info-text">
+					<h2>Intermediate Recipes</h2>
+					<ul>
+						<!-- List of intermediate recipes -->
+						<li><a href="./blogs/StuffedChickenParmBlog.html">Stuffed Chicken Parm</a></li>
+						<li><a href="./blogs/FishSushiBlog.html">Fish Sushi</a></li>
+						<li><a href="./blogs/SausageBiscuitsBlog.html">Italian Sausage Biscuits</a></li>
+						<!-- Add more intermediate recipe links here -->
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<!-- Hard Recipes Section -->
+		<section id="hard-recipes" class="info-section recipe-section">
+			<div class="info-content">
+				<div class="info-text">
+					<h2>Hard Recipes</h2>
+					<ul>
+						<!-- List of hard recipes -->
+						<li><a href="./blogs/DippedChocolateCakeBlog.html">Chocolate Peanut Dipped Cake</a></li>
+						<!-- Add more hard recipe links here -->
+					</ul>
+				</div>
+			</div>
+		</section>
+	</main>
+	
+	<footer>
+		<div class="footer-left">
+			<div class="footer-links">
+				<ul class="main-links">
+					<li><a href="ChefBakerIndex.html">Home</a></li>
+					<li><a href="ChefBakerBlogs.html">Blogs</a></li>
+					<li><a href="ChefBakerVideos.html">Videos</a></li>
+					<li><a href="ChefBakerAbout.html">About</a></li>
+				</ul>
+			</div>
+			<div class="footer-submenu">
+				<div class="submenu">
+					<h3>Blogs</h3>
+					<ul>
+						<li><a href="ChefBakerCritique.html">Critique</a></li>
+						<li><a href="ChefBakerRecipes.html">Recipes</a></li>
+					</ul>
+				</div>
+				<div class="submenu">
+					<h3>Videos</h3>
+					<ul>
+						<li><a href="ChefBakerChannel.html">Welcome Video</a></li>
+					</ul>
+				</div>
+				<div class="submenu">
+					<h3>About</h3>
+					<ul>
+						<li><a href="ChefBakerChefs.html">Chefs</a></li>
+						<li><a href="ChefBakerInfo.html">Information</a></li>
+						<li><a href="ChefBakerForm.html">Become ChefBaker</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-center">
+			<a href="ChefBakerIndex.html"><img src="./images/ChefBakerLogoNoBackground.png" alt="Chef Baker logo"></a>
+			<p>&copy; 2024 Chef Baker On The Web</p>
+		</div>
+		<div class="footer-right">
+			<p>Chef Baker helps teach new Chef how to cook. Our goal is to inprove the taste in the world. 
+			We also aim to bring people closer together while learning something new. Chef Baker has become 
+			one of the best places to learn new recipes from those around you. Most staff are people just 
+			like you and we would love to have you share your own recipes with the world. Click Become Chef 
+			Baker in the headed or to the left in the footer. </p>
+			<br>
+			<br>
+			<p>Contact us: <a href="mailto:jb00645@my.westga.edu">jb00645@my.westga.edu</a></p>
+		</div>
+	</footer>
+
+    <script src="./JavaScript/ChefBakerJavaScript.js"></script>
+</body>
+</html>
