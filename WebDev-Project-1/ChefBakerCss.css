@@ -1193,6 +1193,26 @@ body.dark-mode footer {
     margin: 0 auto;
 }
 
+/* Welcome Video Play Section Additional Styling */
+.welcome-video-play .video-player {
+    width: 75%;
+    margin: 0 auto;
+    max-width: 100%; /* Adjusted maximum width */
+    margin-bottom: 30px;
+    overflow: hidden; /* Added to prevent video overflow */
+}
+
+.welcome-video-play .video-player img {
+    max-width: 100%; /* Added to ensure the image stays within the container */
+    height: auto;
+}
+
+.welcome-video-play .video-player video {
+    width: 100%; /* Adjusted width to fill the container */
+    height: auto;
+    display: block;
+}
+
 /* Welcome Please Learn More Section Additional Styling */
 .welcome-please-learn-more {
     background-color: #ffffff;
