@@ -1182,7 +1182,6 @@ body.dark-mode footer {
     width: 75%;
     margin: 0 auto;
     max-width: 80%; /* Limiting maximum width */
-	margin-bottom: 30px;
 }
 
 .welcome-video-play .video-player video {
@@ -1198,7 +1197,6 @@ body.dark-mode footer {
     width: 75%;
     margin: 0 auto;
     max-width: 100%; /* Adjusted maximum width */
-    margin-bottom: 30px;
     overflow: hidden; /* Added to prevent video overflow */
 }
 
