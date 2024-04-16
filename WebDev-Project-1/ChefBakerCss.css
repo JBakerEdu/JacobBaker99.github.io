@@ -1191,6 +1191,7 @@ body.dark-mode footer {
     max-height: 45vh; /* Limiting maximum height */
     display: block;
     margin: 0 auto;
+    align-content: center;
 }
 
 /* Welcome Video Play Section Additional Styling */
