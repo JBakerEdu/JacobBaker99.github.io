@@ -24,7 +24,7 @@ header {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000; /* Ensure header is above other content */
+    z-index: 1000;
 }
 
 header.dark-mode {
@@ -62,22 +62,22 @@ nav ul li a:hover {
 }
 
 nav ul.submenu {
-    display: none; /* Hide sub-menu items by default */
+    display: none;
     position: absolute;
     background-color: #fff;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    top: 0; /* Align the top of submenu with the top of parent menu */
-    margin-top: 20px; /* Adjust if necessary */
+    top: 0;
+    margin-top: 20px;
 }
 
 nav ul.menu li {
-    position: relative; /* Ensure that submenu is positioned relative to the parent menu item */
+    position: relative;
 }
 
 nav ul.menu li:hover ul.submenu {
-    display: block; /* Show sub-menu items on hover */
+    display: block;
 }
 
 nav ul.submenu li {
@@ -105,8 +105,8 @@ main {
 #hero {
     position: relative;
 	border-radius: 10px;
-    height: 400px; /* Adjust height as needed */
-    overflow: hidden; /* Ensure content inside the hero section doesn't overflow */
+    height: 400px;
+    overflow: hidden;
 }
 
 #hero .carousel {
@@ -244,7 +244,7 @@ main {
 
 #recent-highlights,
 #become-a-chef {
-    margin-top: 40px; /* Add margin to create space between hero and subsequent sections */
+    margin-top: 40px;
 }
 
 /* Toggle mode button styles */
@@ -307,26 +307,26 @@ main {
 	
 	/* Adjust submenu positioning and display */
     nav ul.menu li:hover ul.submenu {
-        display: block; /* Show sub-menu items on hover */
+        display: block;
     }
 
     nav ul.menu li ul.submenu {
-        display: none; /* Hide sub-menu items by default */
+        display: none;
         position: absolute;
         background-color: #fff;
         padding: 10px;
         border-radius: 5px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        top: 60%; /* Position the submenu below the parent menu item */
-        left: 0; /* Align the left edge of submenu with the left edge of parent menu */
-        margin-top: 5px; /* Adjust if necessary */
-        transition: all 0.3s ease; /* Add transition effect */
+        top: 60%;
+        left: 0;
+        margin-top: 5px;
+        transition: all 0.3s ease;
 		z-index: 10;
     }
 
     /* Adjust the position of submenus when hovered */
     nav ul.menu li:hover ul.submenu {
-        display: block; /* Show sub-menu items on hover */
+        display: block;
     }
 
     nav ul li {
@@ -336,7 +336,7 @@ main {
     }
 
     #hero {
-        height: 500px; /* Adjust height as needed */
+        height: 500px;
     }
 
     #hero .hero-content {
@@ -379,44 +379,44 @@ main {
 
 /* Footer styles */
 footer {
-    background: linear-gradient(to bottom, #ffd7ba, #009ddd); /* Light mode gradient */
+    background: linear-gradient(to bottom, #ffd7ba, #009ddd);
     color: #000;
     text-align: center;
     padding: 20px;
-    box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.1); /* Add shadow at the top */
+    box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    flex-wrap: wrap;
 }
 
 body.dark-mode footer {
-    background: linear-gradient(to bottom, #000, #f00); /* Dark mode gradient */
+    background: linear-gradient(to bottom, #000, #f00);
     color: #fff;
 }
 
 .footer-left {
     flex: 1;
-    text-align: center; /* Center the content horizontally */
+    text-align: center;
 }
 
 .footer-links {
-    margin-bottom: 20px; /* Add margin between main links and submenus */
-    text-align: center; /* Center the content horizontally */
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .footer-links ul {
     list-style-type: none;
     padding: 0;
-    display: flex; /* Display the list horizontally */
-    justify-content: center; /* Center the list items horizontally */
+    display: flex;
+    justify-content: center;
 }
 
 .footer-links li {
     margin-bottom: 5px;
-    margin-right: 20px; /* Add space between list items */
+    margin-right: 20px;
 	text-shadow: 0px 0px 2px #fff;
 	text-shadow: 0px 0px 2px #fff;
-	text-shadow: 0px 0px 2px #fff;	/* Add white shadow around links */
+	text-shadow: 0px 0px 2px #fff;
 	text-shadow: 0px 0px 3px #fff;
 	text-shadow: 0px 0px 4px #fff;
 	text-shadow: 0px 0px 4px #fff;
@@ -433,14 +433,14 @@ body.dark-mode footer {
 }
 
 .footer-center img {
-    max-width: 100%; /* Make the logo responsive */
+    max-width: 100%;
     height: auto;
     margin-bottom: 10px;
 }
 
 .footer-right {
     flex: 1;
-    text-align: center; /* Center the content horizontally */
+    text-align: center;
 }
 
 .footer-right p {
@@ -452,7 +452,7 @@ body.dark-mode footer {
     flex-wrap: wrap;
 	text-shadow: 0px 0px 2px #fff;
 	text-shadow: 0px 0px 2px #fff;
-	text-shadow: 0px 0px 2px #fff;	/* Add white shadow around links */
+	text-shadow: 0px 0px 2px #fff;
 	text-shadow: 0px 0px 3px #fff;
 	text-shadow: 0px 0px 4px #fff;
 	text-shadow: 0px 0px 4px #fff;
@@ -467,18 +467,18 @@ body.dark-mode footer {
 
 @media (max-width: 768px) {
     .footer-links ul {
-        flex-direction: column; /* Stack main links vertically */
-        align-items: center; /* Center main links vertically */
+        flex-direction: column;
+        align-items: center;
     }
 
     .footer-links li {
-        margin-right: 0; /* Remove right margin on list items */
-        margin-bottom: 10px; /* Adjust spacing between list items */
+        margin-right: 0;
+        margin-bottom: 10px;
     }
 
     .footer-submenu {
-        flex-direction: column; /* Stack submenus vertically */
-        align-items: center; /* Center submenus horizontally */
+        flex-direction: column;
+        align-items: center;
     }
 
     .submenu {
@@ -502,23 +502,23 @@ body.dark-mode footer {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center content horizontally */
-    margin-left: auto; /* Auto margin on left and right to center the container */
+    align-items: center;
+    margin-left: auto;
     margin-right: auto;
 	margin-top: 40px;
 }
 
 /* Adjust the size of the thumbnail container */
 .blog-thumbnail {
-    width: 75%; /* Set a fixed width for the thumbnail container */
-    overflow: hidden; /* Hide any overflow content */
+    width: 75%;
+    overflow: hidden;
 }
 
 /* Adjust the size of the thumbnail image */
 .blog-thumbnail img {
     width: 100%;
     height: calc(100% - 50px);
-    object-fit: cover; /* Crop the image while maintaining aspect ratio */
+    object-fit: cover;
     margin-bottom: 10px;
 }
 
@@ -537,28 +537,26 @@ body.dark-mode footer {
 
 @media (max-width: 992px) {
     .blogs-section .blog-post {
-        width: calc(75% - 20px); /* Set the width to 50% minus margin */
+        width: calc(75% - 20px);
     }
 }
 
 @media (max-width: 768px) {
     .blogs-section .blog-post {
-        width: calc(75% - 20px); /* Set the width to 50% minus margin */
+        width: calc(75% - 20px);
     }
 }
 
 @media (max-width: 1024px) {
-    /* Adjust the size of blog post containers for medium screens */
     .blogs-section .blog-post {
-        width: calc(50% - 20px); /* Set the width to 50% minus margin */
+        width: calc(50% - 20px);
     }
 }
 
 @media (min-width: 1200px) {
-    /* Limit the maximum width of blog post containers for larger screens */
     .blogs-section .blog-post {
-        max-width: 400px; /* Set a maximum width */
-        width: 100%; /* Set width to 100% to prevent containers from growing beyond the maximum width */
+        max-width: 400px;
+        width: 100%;
     }
 }
 
@@ -590,7 +588,7 @@ body.dark-mode footer {
 .form-container {
     max-width: 50%;
     margin: 0 auto;
-    background-image: url('./images/ThanksGivingWholePlate.jpg'); /* Replace 'background_image.jpg' with your desired background image */
+    background-image: url('./images/ThanksGivingWholePlate.jpg');
     background-size: cover;
     background-position: center;
     padding: 20px;
@@ -608,9 +606,9 @@ body.dark-mode footer {
 
 .form-container input,
 .form-container textarea {
-    width: calc(100% - 20px); /* Adjust width to leave space for padding */
+    width: calc(100% - 20px);
     padding: 10px;
-    margin: 10px auto; /* Center the input fields */
+    margin: 10px auto;
     display: block;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -631,7 +629,7 @@ body.dark-mode footer {
     cursor: pointer;
     transition: background-color 0.3s ease;
     display: block;
-    margin: 10px auto; /* Center the button */
+    margin: 10px auto;
 }
 
 .form-container button:hover {
@@ -830,12 +828,12 @@ body.dark-mode footer {
 }
 
 .form-container {
-    background-image: url('./images/your-image.jpg'); /* Replace 'your-image.jpg' with the path to your image */
+    background-image: url('./images/your-image.jpg');
     background-size: cover;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    color: #000; /* Adjust the text color */
+    color: #000;
 }
 
 .form-container h2 {
@@ -863,88 +861,88 @@ body.dark-mode footer {
 #critique-list {
     list-style-type: none;
     padding: 0;
-    max-height: 250px; /* Set maximum height */
-    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: 250px;
+    overflow-y: auto;
 }
 
 #critique-list li {
     word-wrap: break-word;
     overflow-wrap: break-word;
     margin-bottom: 20px;
-    border-radius: 10px; /* Add rounded corners */
-    background-color: #c3ebed; /* Set background color to white */
-    padding: 20px; /* Add padding to create space around the critique */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    border-radius: 10px;
+    background-color: #c3ebed;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Recipes Page Styles */
 
 /* Main Content */
 .blog-recipes-main {
-    max-width: 800px; /* Set a maximum width for the main content */
-    margin: 0 auto; /* Center the content horizontally */
-    padding: 20px; /* Add padding around the main content */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 /* Section Styles */
 .blog-recipes-main section {
-	margin-bottom: 40px; /* Add space below the video introduction section */
-    background-color: #fff; /* Set background color for the video introduction section */
-    padding: 20px; /* Add padding to the video introduction section */
-    border-radius: 10px; /* Add border radius to create rounded corners */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+	margin-bottom: 40px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .blog-recipes-main section h2 {
-    font-size: 2rem; /* Increase the font size of section headings */
-    margin-bottom: 20px; /* Add space below section headings */
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
 .blog-recipes-main section table {
-    width: 100%; /* Make the table fill the container */
-    border-collapse: collapse; /* Collapse table borders */
+    width: 100%;
+    border-collapse: collapse;
 }
 
 .blog-recipes-main section table th,
 .blog-recipes-main section table td {
-    padding: 10px; /* Add padding to table cells */
-    border: 1px solid #ccc; /* Add borders to table cells */
+    padding: 10px;
+    border: 1px solid #ccc;
 }
 
 .blog-recipes-main section table th {
-    background-color: #f5f5f5; /* Add background color to table header */
+    background-color: #f5f5f5;
 }
 
 .blog-recipes-main section ol {
-    list-style-type: decimal; /* Use decimal numbering for ordered lists */
-    padding-left: 20px; /* Add left padding to the ordered list */
+    list-style-type: decimal;
+    padding-left: 20px;
 }
 
 .blog-recipes-main section ol li {
-    margin-bottom: 10px; /* Add space between list items */
+    margin-bottom: 10px;
 }
 
 /* Table Styles */
 .blog-recipes-main section table {
-    width: 100%; /* Make the table fill the container */
-    border-collapse: collapse; /* Collapse table borders */
-    background-color: #f5f5f5; /* Set the background color of the table */
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f5f5f5;
 }
 
 .blog-recipes-main section table th,
 .blog-recipes-main section table td {
-    padding: 10px; /* Add padding to table cells */
-    border: 1px solid #ccc; /* Add borders to table cells */
+    padding: 10px;
+    border: 1px solid #ccc;
 }
 
 .blog-recipes-main section table th {
-    background-color: #d2b48c; /* Set tan background color for table header */
-    color: #000; /* Set color of table header text */
+    background-color: #d2b48c;
+    color: #000;
 }
 
 .blog-recipes-main section table td {
-    background-color: #ccc; /* Set gray background color for table cells */
-    color: #000; /* Set color of table cell text */
+    background-color: #ccc;
+    color: #000;
 }
 
 /* Button Styles */
@@ -993,7 +991,7 @@ body.dark-mode footer {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     margin-top: 40px;
     text-align: center;
-    font-family: Arial, sans-serif; /* Add the desired font-family */
+    font-family: Arial, sans-serif;
 }
 
 .family-cooking-image {
@@ -1029,19 +1027,19 @@ body.dark-mode footer {
 
 /* Main Content */
 .videos-main {
-    max-width: 800px; /* Set a maximum width for the main content */
-    margin: 0 auto; /* Center the content horizontally */
-    padding: 20px; /* Add padding around the main content */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 /* Video Introduction Section */
 .welcome-video-play,
 .video-introduction {
-    margin-bottom: 40px; /* Add space below the video introduction section */
-    background-color: #fff; /* Set background color for the video introduction section */
-    padding: 20px; /* Add padding to the video introduction section */
-    border-radius: 10px; /* Add border radius to create rounded corners */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+    margin-bottom: 40px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Welcome Video Play Section Additional Styling */
@@ -1065,8 +1063,8 @@ body.dark-mode footer {
 }
 
 .welcome-video-play h2 {
-    margin-top: 0; /* Remove top margin from the heading */
-    margin-bottom: 20px; /* Add margin below the heading */
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 
@@ -1076,25 +1074,25 @@ body.dark-mode footer {
 }
 
 .video-introduction p {
-    font-size: 1.2rem; /* Set font size for paragraph */
-    line-height: 1.5; /* Set line height for better readability */
+    font-size: 1.2rem;
+    line-height: 1.5;
 }
 
 .welcome-content {
-    position: relative; /* To position the shadow */
-    height: 300px; /* Adjust the height as needed */
+    position: relative;
+    height: 300px;
     background-image: url('./images/video-failEggCrack.gif');
     background-size: cover;
     background-position: center;
     display: flex;
-    align-items: center; /* Center content vertically */
-    justify-content: center; /* Center content horizontally */
-    text-align: center; /* Center text horizontally */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .welcome-content h1 {
-    color: black; /* Text color */
-    text-shadow: 0 0 10px white; /* Adding white shadow behind the text */
+    color: black;
+    text-shadow: 0 0 10px white;
 }
 
 /* Video Blogs Section */
@@ -1106,69 +1104,69 @@ body.dark-mode footer {
 
 /* Individual Video Posts */
 .video-post {
-    width: calc(30% - 20px); /* Set width for video post containers */
-    margin-bottom: 20px; /* Add space between video posts */
-    background-color: #f5f5f5; /* Set background color for video posts */
-    padding: 20px; /* Add padding inside video post containers */
+    width: calc(30% - 20px);
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center content horizontally */
-    text-align: center; /* Center text horizontally */
+    align-items: center;
+    text-align: center;
 }
 
 /* Video Thumbnail */
 .video-thumbnail {
-    width: 100%; /* Set width for the thumbnail container */
-    height: 200px; /* Set height for the thumbnail container */
-    overflow: hidden; /* Hide any overflow content */
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
     display: flex;
-    align-items: center; /* Center content vertically */
-    justify-content: center; /* Center content horizontally */
+    align-items: center;
+    justify-content: center;
 }
 
 .video-thumbnail img {
-    max-width: 100%; /* Set width to fill the container */
-    max-height: 100%; /* Set height to fill the container */
-    object-fit: cover; /* Crop the image while maintaining aspect ratio */
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
 }
 
 /* Video Title */
 .video-title {
-    font-size: 1.5rem; /* Set font size for video titles */
-    margin-bottom: 10px; /* Add space below video titles */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
 
 /* Video Details */
 .video-details {
-    text-align: center; /* Center content horizontally */
+    text-align: center;
 }
 
 .author {
-    font-weight: bold; /* Set font weight for author name */
-    margin-bottom: 5px; /* Add space below author name */
+    font-weight: bold;
+    margin-bottom: 5px;
 	margin-top: 10px;
 }
 
 .rating {
-    font-style: italic; /* Set font style for rating */
-    margin-bottom: 10px; /* Add space below rating */
+    font-style: italic;
+    margin-bottom: 10px;
 }
 
 .description {
-    margin-bottom: 10px; /* Add space below video description */
+    margin-bottom: 10px;
 }
 
 .watch-video-button {
-    background-color: #009ddd; /* Set background color for watch video button */
-    color: #fff; /* Set text color for watch video button */
-    padding: 10px 20px; /* Add padding to watch video button */
-    border-radius: 5px; /* Add border radius to watch video button */
-    text-decoration: none; /* Remove default underline from watch video button */
-    transition: background-color 0.3s ease; /* Add transition effect to watch video button */
+    background-color: #009ddd;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
 .watch-video-button:hover {
-    background-color: #007ddd; /* Change background color on hover */
+    background-color: #007ddd;
 }
 
 /* Adjust layout when screen size is medium or larger */
@@ -1182,77 +1180,77 @@ body.dark-mode footer {
 
 /* Welcome Intro Section Additional Styling */
 .welcome-intro {
-    background-color: #ffffff; /* White background */
-    padding: 50px 20px; /* Padding */
-    text-align: center; /* Center align text */
-    margin-top: 50px; /* Add margin at the top */
-    max-width: 800px; /* Limit maximum width */
-    margin: 0 auto; /* Center horizontally */
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
-    margin-bottom: 30px; /* Add space at the bottom */
+    background-color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 50px;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
 	margin-top: 30px;
 }
 
 .welcome-intro h2 {
-    color: #000000; /* Black color for headings */
+    color: #000000;
 }
 
 .welcome-intro p {
-    color: #444444; /* Dark gray color for paragraphs */
-    margin-bottom: 20px; /* Add space at the bottom of paragraphs */
+    color: #444444;
+    margin-bottom: 20px;
 }
 
 /* Welcome Video Play Section Additional Styling */
 .welcome-video-play .video-player {
     width: 75%;
     margin: 0 auto;
-    max-width: 800px; /* Limiting maximum width */
+    max-width: 800px;
 	margin-bottom: 30px;
 }
 
 .welcome-video-play .video-player video {
-    max-width: 100%; /* Ensuring video stays within parent container */
+    max-width: 100%;
     height: auto;
-    max-height: 45vh; /* Limiting maximum height */
+    max-height: 45vh;
     display: block;
     margin: 0 auto;
 }
 
 /* Welcome Please Learn More Section Additional Styling */
 .welcome-please-learn-more {
-    background-color: #ffffff; /* White background */
-    padding: 50px 20px; /* Padding */
-    text-align: center; /* Center align text */
-    margin-top: 50px; /* Add margin at the top */
-    max-width: 800px; /* Limit maximum width */
-    margin: 0 auto; /* Center horizontally */
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
-    margin-bottom: 30px; /* Add space at the bottom */
+    background-color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 50px;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
 }
 
 .welcome-please-learn-more h2 {
-    color: #000000; /* Black color for headings */
+    color: #000000;
 }
 
 .welcome-please-learn-more p {
-    color: #444444; /* Dark gray color for paragraphs */
-    margin-bottom: 20px; /* Add space at the bottom of paragraphs */
+    color: #444444;
+    margin-bottom: 20px;
 }
 
 .welcome-please-learn-more a {
-    display: inline-block; /* Display as block-level element */
-    background-color: #009ddd; /* Button background color */
-    color: #ffffff; /* Button text color */
-    padding: 10px 20px; /* Padding */
-    text-decoration: none; /* Remove underline */
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s ease; /* Smooth transition */
+    display: inline-block;
+    background-color: #009ddd;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 .welcome-please-learn-more a:hover {
-    background-color: #007ddd; /* Change background color on hover */
+    background-color: #007ddd;
 }
 
 .gallery {
@@ -1277,5 +1275,5 @@ body.dark-mode footer {
     width: 100%;
     height: 100%;
     display: block;
-    object-fit: cover; /* Ensure the image covers the entire container */
+    object-fit: cover;
 }
