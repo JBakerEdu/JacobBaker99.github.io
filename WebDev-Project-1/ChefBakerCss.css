@@ -1170,6 +1170,7 @@ body.dark-mode footer {
 
 .welcome-intro h2 {
     color: #000000; /* Black color for headings */
+    margin-bottom: -30px;
 }
 
 .welcome-intro p {
@@ -1180,6 +1181,7 @@ body.dark-mode footer {
 /* Welcome Video Play Section Additional Styling */
 .welcome-video-play .video-player {
     width: 75%;
+    margin: 0 auto;
     max-width: 80%; /* Limiting maximum width */
 }
 
@@ -1188,11 +1190,13 @@ body.dark-mode footer {
     height: auto;
     max-height: 45vh; /* Limiting maximum height */
     display: block;
+    margin: 0 auto;
 }
 
 /* Welcome Video Play Section Additional Styling */
 .welcome-video-play .video-player {
     width: 75%;
+    margin: 0 auto;
     max-width: 100%; /* Adjusted maximum width */
     overflow: hidden; /* Added to prevent video overflow */
 }
