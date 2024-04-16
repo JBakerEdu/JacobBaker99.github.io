@@ -1048,20 +1048,25 @@ body.dark-mode footer {
 .welcome-video-play .video-player {
     width: 75%;
     margin: 0 auto;
-    max-width: 100%; /* Adjusted maximum width */
+    max-width: 100%;
     margin-bottom: 30px;
-    overflow: hidden; /* Added to prevent video overflow */
+    overflow: hidden;
 }
 
 .welcome-video-play .video-player img {
-    max-width: 100%; /* Added to ensure the image stays within the container */
+    max-width: 100%;
     height: auto;
 }
 
 .welcome-video-play .video-player video {
-    width: 100%; /* Adjusted width to fill the container */
+    width: 100%;
     height: auto;
     display: block;
+}
+
+.welcome-video-play h2 {
+    margin-top: 0; /* Remove top margin from the heading */
+    margin-bottom: 20px; /* Add margin below the heading */
 }
 
 
