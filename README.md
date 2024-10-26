@@ -19,3 +19,7 @@ Experience the culinary journey of a lifetime with Chef Baker. By joining our pl
 
 <h2>Want to Learn More?</h2>
 Please see our information page about what and how to become part of the team.
+
+<h2>Click the link below to go to the home page.</h2>
+[Visit the Chef Baker Home Page](https://jacobbaker99.github.io/WebDev-Project-1/ChefBakerIndex.html)
+
