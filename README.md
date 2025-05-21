@@ -1,5 +1,7 @@
 # Jacob_Baker.github.io
 
+🚨🚨🚨 **Note**: This project is no longer actively hosted. Ownership of the live Chef Baker platform has been transferred, and this repository now serves as an archived showcase of the original development and content created by Jacob Baker (Me on another account). ReadMe is same as it was when hosted, thank you for understanding. 🚨🚨🚨
+
 <h2>Welcome to Chef Baker On The Web</h2>
 Welcome to Chef Baker, where culinary delights await! Our platform is dedicated to helping you master the art of cooking while enjoying the process with your loved ones. Join us on this culinary adventure and discover the joy of creating delicious meals together.
 
